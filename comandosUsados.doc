@@ -1,0 +1,32 @@
+
+npm i eslint babel-eslint --save-dev
+
+iniciar configuração eslint
+
+npx eslint --init
+
+lembrando que tive problemas com o babel pois já era "deprecated" aquele
+modelo que usei no projeto anterior... então fica como:
+
+nas configs do eslintrc
+
+instalando o eslint correto e removendo o errado com comandos como:
+
+npm uninstall babel-eslint
+npm install @babel/eslint-parser -D
+
+parser: '@babel/eslint-parser',
+  parserOptions: {
+    requireConfigFile: false,
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  }
+
+para validar nos componentes os tipos das props
+npm i prop-types

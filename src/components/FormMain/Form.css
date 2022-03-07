@@ -1,0 +1,36 @@
+.form{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input[type="text"]{
+  height: 40px;
+  padding: 0 20px;
+  font-size: 20px;
+  border: 1px solid var(--button-simple);
+  min-width: 80%;
+  transition: all 400ms;
+}
+
+.form button[type="submit"]{
+  border:none;
+  height: 40px;
+  width: 40px;
+  background: var(--button-simple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-add-tarefa{
+  display: flex;
+  transition: all 400ms;
+
+}
+
+.div-add-tarefa:hover{
+  box-shadow:-4px 5px 9px 1px rgb(0, 0, 0, 0.3);
+}
+

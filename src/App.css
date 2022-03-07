@@ -1,0 +1,24 @@
+:root{
+  /* cores ainda não decididas */
+  --main-box-color:#76323F;
+  --sec-box-color:#96858F;
+  /* cores decididas */
+  --main-bg-color:rgb(41, 41, 73);
+  --main-container-color:rgb(223, 220, 227);
+  --input-color:rgb(204, 204, 204);
+  --button-atention:rgb(7, 136, 155);
+  --button-warning:rgb(252, 74, 26);
+  --button-simple:rgb(74, 189, 172);
+}
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background: var(--main-bg-color)
+
+}
